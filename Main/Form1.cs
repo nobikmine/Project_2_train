@@ -36,10 +36,42 @@ namespace Main
             }
             catch
             {
-                MessageBox.Show("Ошибка ввода!"); 
+                MessageBox.Show("Ошибка ввода!");
             }
         }
-        
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.ActiveControl == buttonCheck)
+                {
+                    buttonClear.Focus();
+                }
+                else if (this.ActiveControl == buttonClear)
+                {
+                    buttonClear.PerformClick();
+                    textBoxTrainIn.Focus();
+                }
+                else
+                {
+                    // обычный переход
+                    this.SelectNextControl(this.ActiveControl, true, true, true, true);
+                }
+
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            textBoxTrainIn.Clear();
+            textBoxTrainOut.Clear();
+            textBoxHuman.Clear();
+            labelResult.Text = "Результат";
+
+            textBoxTrainIn.Focus();
+        }
     }
     public static class Logic
     {
