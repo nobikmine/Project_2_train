@@ -135,7 +135,7 @@
             Controls.Add(textBoxTrainIn);
             KeyPreview = true;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Расчет наличия поезда на станции";
             KeyDown += Form1_KeyDown;
             ResumeLayout(false);
             PerformLayout();

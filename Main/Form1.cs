@@ -55,7 +55,6 @@ namespace Main
                 }
                 else
                 {
-                    // обычный переход
                     this.SelectNextControl(this.ActiveControl, true, true, true, true);
                 }
 
@@ -72,6 +71,7 @@ namespace Main
 
             textBoxTrainIn.Focus();
         }
+
     }
     public static class Logic
     {
