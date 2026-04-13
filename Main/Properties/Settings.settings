@@ -2,17 +2,23 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Main.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="trainIn" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="inHour" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="trainOut" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="inMin" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="human" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="outHour" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="labelResult" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="outMin" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="hereHour" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="hereMin" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
 </SettingsFile>

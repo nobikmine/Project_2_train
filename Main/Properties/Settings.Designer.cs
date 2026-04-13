@@ -13,7 +13,7 @@ namespace Main.Properties {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "18.4.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+    public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
         
@@ -25,49 +25,73 @@ namespace Main.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string trainIn {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int inHour {
             get {
-                return ((string)(this["trainIn"]));
+                return ((int)(this["inHour"]));
             }
             set {
-                this["trainIn"] = value;
+                this["inHour"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string trainOut {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int inMin {
             get {
-                return ((string)(this["trainOut"]));
+                return ((int)(this["inMin"]));
             }
             set {
-                this["trainOut"] = value;
+                this["inMin"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string human {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int outHour {
             get {
-                return ((string)(this["human"]));
+                return ((int)(this["outHour"]));
             }
             set {
-                this["human"] = value;
+                this["outHour"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string labelResult {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int outMin {
             get {
-                return ((string)(this["labelResult"]));
+                return ((int)(this["outMin"]));
             }
             set {
-                this["labelResult"] = value;
+                this["outMin"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int hereHour {
+            get {
+                return ((int)(this["hereHour"]));
+            }
+            set {
+                this["hereHour"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int hereMin {
+            get {
+                return ((int)(this["hereMin"]));
+            }
+            set {
+                this["hereMin"] = value;
             }
         }
     }
